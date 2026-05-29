@@ -1,11 +1,242 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>LuxxShine Yacht Care</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuxxShine Yacht Care</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+      url("https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .hero {
+      max-width: 800px;
+    }
+
+    .logo {
+      font-size: 28px;
+      letter-spacing: 4px;
+      color: #d4af37;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 56px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .gold {
+      color: #d4af37;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #d4af37;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 1px solid #d4af37;
+    }
+
+    section {
+      padding: 80px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #d4af37;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #111;
+      padding: 30px;
+      border: 1px solid #222;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      color: #d4af37;
+      margin-bottom: 15px;
+    }
+
+    .about {
+      background: #0b0b0b;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .gallery div {
+      height: 220px;
+      background: #222;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      border: 1px solid #333;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      color: #777;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      header {
+        padding: 25px;
+      }
+
+      .btn {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>LuxxShine Yacht Care</h1>
-    <p>Premium Yacht Polishing & Protection</p>
+
+  <header>
+    <div class="hero">
+      <div class="logo">LUXXSHINE</div>
+      <h1>Premium <span class="gold">Yacht Polishing</span> & Protection</h1>
+      <p>
+        High-end exterior yacht care focused on polishing, gelcoat restoration
+        and long-lasting surface protection.
+      </p>
+      <a href="https://instagram.com/luxx_shine" class="btn">Instagram</a>
+      <a href="mailto:contact@luxxshine.com" class="btn btn-outline">Request Quote</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <p>
+      LuxxShine specializes in premium exterior yacht care for owners,
+      marinas, brokers and nautical professionals.
+    </p>
+
+    <div class="services">
+      <div class="card">
+        <h3>Yacht Polishing</h3>
+        <p>Professional polishing to restore gloss, depth and clarity.</p>
+      </div>
+
+      <div class="card">
+        <h3>Gelcoat Restoration</h3>
+        <p>Oxidation removal and correction for tired or weathered surfaces.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ceramic Protection</h3>
+        <p>Durable surface protection for shine, resistance and easier maintenance.</p>
+      </div>
+
+      <div class="card">
+        <h3>Pre-Sale Preparation</h3>
+        <p>Visual preparation to increase perceived value before sale or delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About LuxxShine</h2>
+    <p>
+      LuxxShine Yacht Care is dedicated to premium yacht polishing and exterior
+      protection. Our goal is simple: restore elegance, enhance shine and protect
+      every surface with a luxury-level finish.
+    </p>
+  </section>
+
+  <section>
+    <h2>Before & After</h2>
+    <p>
+      Soon we will add real project images and transformations from LuxxShine.
+    </p>
+
+    <div class="gallery">
+      <div>Before Image</div>
+      <div>After Image</div>
+      <div>Yacht Detail</div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Request a Quote</h2>
+    <p>
+      Contact LuxxShine for premium yacht polishing and protection services.
+    </p>
+    <br>
+    <a href="https://instagram.com/luxx_shine" class="btn">Contact on Instagram</a>
+    <a href="mailto:contact@luxxshine.com" class="btn btn-outline">Send Email</a>
+  </section>
+
+  <footer>
+    © 2026 LuxxShine Yacht Care. Premium Yacht Polishing & Protection.
+  </footer>
+
 </body>
 </html>
 
